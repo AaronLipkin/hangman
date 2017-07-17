@@ -1,0 +1,163 @@
+body {
+	font-family: 'Mandali', sans-serif;
+	background-color: lightblue;
+}
+
+#play {
+	padding: 1em 2em;
+	margin: 0 auto;
+	position:fixed;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: fantasy;
+	font-size: 30px;
+}
+
+.noose {
+	position: fixed;
+	width:45%;
+	display:block;
+	top: 8%;
+	left: 30%;
+	transform: translateX(-50%);
+}
+
+
+.man {
+	width:25%;
+	position: fixed;
+	top: 11%;
+	left: 32%;
+	transform: translateX(-50%);
+}
+
+@media(min-width:1000px) {
+	.noose {
+		width:450px;
+	}
+	.man {
+		width: 250px;
+	}
+}
+
+.input {
+	position: fixed;
+	margin: 0px 12%;
+	top: 50%;
+	width:76%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #330000;
+	color: #330000;
+	font-size: 40px;
+	text-align: center;
+	font-family: fantasy;
+	padding: .2em;
+}
+
+h1 {
+	font-size: 100px;
+	font-family: fantasy;
+	text-align: center;
+	margin-top: 6%;
+}
+
+h2 {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 30px;
+	font-family: 'Bellefair', serif;
+}
+
+p {
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	width: 50%;
+	margin: 10px auto;
+	font-family: 'Bellefair', serif;
+}
+
+.game {
+	display: none;
+}
+
+.start {
+	display: block;
+}
+
+.word {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	position: fixed;
+	bottom: 10%;
+}
+
+.letter {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	padding:5px;
+	border-bottom: 2px solid black;
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: transparent;
+}
+
+.space {
+	border-bottom-color: transparent;
+}
+
+.letter-buttons {
+	display: flex;
+	width: 40%;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: fixed;
+	left: 55%;
+	top: 15%;
+}
+
+.input-letter {
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	margin:5px;
+	font-size: 20px;
+}
+
+.game-over {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height:100%;
+	z-index: 2;
+	background-color: rgba(255,255,255,.5);
+	display: none;
+}
+
+.message {
+	position: fixed;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	width: 60%;
+	height: 40%;
+	transform: translate(-50%,-50%);
+	border:10px dashed grey;
+	text-align: center;
+}
+
+.message h1 {
+	font-size: 80px;
+}
+
+.play-again {
+	padding: 1em 2em;
+	margin: 30px auto;
+	font-family: fantasy;
+	font-size: 30px;
+}
