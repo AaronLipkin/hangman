@@ -28,13 +28,13 @@ $(() => {
 	$('.input-letter').one('click', (e) => {
 		let $clickedLetter = $(e.currentTarget)
 		$clickedLetter.css('text-decoration','line-through')
-		let filepath = ['man','','.png']
+		let filepath = ['images/man','','.png']
 		if(letters.indexOf($clickedLetter.text()) === -1) {
 			let currentSource = $('.man').attr('src')
-			filepath[1] = String(parseInt(currentSource.split('')[3]) + 1)
+			filepath[1] = String(parseInt(currentSource.split('')[10]) + 1)
 			let newImage = filepath.join('')
 			$('.man').attr('src', newImage)
-			if(newImage === 'man6.png') {
+			if(newImage === 'images/man6.png') {
 				$('.win-lose').text('You Lose!')
 				$('.game-over').css('display','block')
 			}
